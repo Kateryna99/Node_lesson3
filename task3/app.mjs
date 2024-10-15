@@ -5,7 +5,6 @@ import logger from 'morgan'
 import {fileURLToPath} from 'url'
 import indexRouter from './routes/index.mjs'
 import goalsRouter from './routes/goals.mjs'
-import aboutRouter from './routes/about.mjs'
 import infoRouter from "./routes/info.mjs";
 
 const app = express()
@@ -21,7 +20,6 @@ app.use(cookieParser())
 app.use(express.static(path.join(__dirname, 'public')))
 app.use('/', indexRouter)
 app.use('/goals', goalsRouter)
-app.use('/about', aboutRouter)
 app.use('/info', infoRouter)
 
 // catch 404 and forward to error handler
