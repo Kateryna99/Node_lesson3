@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Our shop</h1>
+    <p>Welcome to our shop!</p>
+
+    <ul>
+      <% links.forEach(link => { %>
+        <li><a href="<%= link.path %>"><%= link.title %></a></li>
+      <% }) %>
+    </ul>
+  </body>
+</html>
