@@ -24,7 +24,6 @@ app.use('/season', seasonRouter)
 app.use('/day', dayRouter)
 app.use('/time', timeRouter)
 
-
 app.use((req, res, next) => {
     const err = new Error('Not Found')
     err.status = 404
