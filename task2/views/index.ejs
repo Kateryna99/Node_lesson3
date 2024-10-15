@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title.charAt(0).toUpperCase() + title.slice(1) %></h1>
+
+    <% if (title !== 'About me') {%>
+      <p>My favorite <%= title %> is <%= favorite %></p>
+      <%} else {%>
+        <p>I am a web developer and I love building things!</p>
+    <%}%>
+  </body>
+</html>
